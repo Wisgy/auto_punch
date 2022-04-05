@@ -43,6 +43,7 @@ def do_punch(driver):
     input3 = driver.find_element(By.XPATH, '/html/body/div[2]/div[2]/div[2]/div[2]/form/div/div[4]/div/label[5]/i')
     ActionChains(driver).move_to_element(input2).click(input2).perform()
     ActionChains(driver).move_to_element(input3).click(input3).perform()
+    driver.find_element(By.XPATH,'/html/body/div[2]/div[2]/div[2]/div[2]/form/div/div[5]/input').send_keys("去三教上课和自习")
     driver.find_element(By.XPATH, '//*[@id="report-submit-btn"]').click()
 
 if __name__ == '__main__':
